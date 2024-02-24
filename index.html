@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>ISsoft: Tanks</title>
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <main>
+      <section id="game-field">
+        <h2>Tanks</h2>
+
+        <div id="game-map" class="game-map">
+          <!-- Player tank -->
+          <div
+            id="player-tank"
+            class="game-object game-object__player-tank"
+          ></div>
+          <!-- Walls will be represented as div elements -->
+          <div class="wall"></div>
+        </div>
+      </section>
+
+      <section id="legend">
+        <h2>Legend</h2>
+        <ul class="legend-list">
+          <li class="legend-item">
+            <div class="game-object game-object__player-tank"></div>
+            <h1 id="hearts">player tank ❤️❤️❤️</h1>
+          </li>
+          <li class="legend-item">
+            <div class="game-object game-object__enemy-tank"></div>
+            <h1>enemy tank</h1>
+          </li>
+          <li class="legend-item">
+            <div class="game-object game-object__wall"></div>
+            <h1>wall</h1>
+          </li>
+          <h1 id="points">Points 0</h1>
+        </ul>
+      </section>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
